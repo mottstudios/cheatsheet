@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mott Boy Cheat Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fdfbf6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --muted: #444;
+    --line: #c9c2b4;
+    --accent: #1d4e89;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 16px 48px;
+  }
+  h1 {
+    font-family: "Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  .hint {
+    text-align: center;
+    color: var(--muted);
+    margin: 0 0 28px;
+  }
+  details {
+    background: var(--card);
+    border: 2px solid var(--line);
+    border-radius: 12px;
+    margin-bottom: 18px;
+  }
+  summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    margin-left: auto;
+    font-size: 34px;
+    line-height: 1;
+    color: var(--accent);
+    font-family: Arial, sans-serif;
+  }
+  details[open] summary::after { content: "\2212"; }
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .phone {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .name, .phone { font-family: "Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  summary > div { display: flex; flex-wrap: wrap; column-gap: 16px; align-items: baseline; }
+  ul {
+    margin: 0;
+    padding: 4px 22px 22px 52px;
+    border-top: 2px solid var(--line);
+    padding-top: 16px;
+  }
+  li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>THE MOTT BOY<br>CHEAT SHEET</h1>
+  <p class="hint">Tap a name to see more.</p>
+
+  <details>
+    <summary><div><span class="name">Robert</span><span class="phone">(540) 290-1677</span></div></summary>
+    <ul>
+      <li>The oldest son</li>
+      <li>Lives in Harrisonburg, Virginia</li>
+      <li>Wife: Karen</li>
+      <li>Son: Theo</li>
+      <li>University of Arizona</li>
+      <li>Just bought a home</li>
+      <li>Plays trombone</li>
+      <li>Graphic designer</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary><div><span class="name">David</span><span class="phone">(650) 224-4763</span></div></summary>
+    <ul>
+      <li>The middle son</li>
+      <li>Lives in Los Altos (Silicon Valley)</li>
+      <li>Wife: Rosi (Brazilian)</li>
+      <li>Kids: Ariana and Carter (30s) &amp; Benicio (born 2025)</li>
+      <li>Works for Apple</li>
+      <li>Went to Cal Poly</li>
+      <li>The financially responsible one</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary><div><span class="name">Tom</span><span class="phone">(310) 384-4680</span></div></summary>
+    <ul>
+      <li>The youngest son</li>
+      <li>Lives in DTLA (Downtown Los Angeles)</li>
+      <li>Kids: John and Eve (twins)</li>
+      <li>Comes to visit on Amtrak</li>
+      <li>UCLA Art School</li>
+      <li>Creative services</li>
+    </ul>
+  </details>
+</main>
+</body>
+</html>
